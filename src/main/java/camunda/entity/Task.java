@@ -1,4 +1,6 @@
-package camunda.task;
+package camunda.entity;
+
+import camunda.enums.TaskState;
 
 import java.time.ZonedDateTime;
 import java.util.List;

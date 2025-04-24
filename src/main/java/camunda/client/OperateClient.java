@@ -1,6 +1,6 @@
 package camunda.client;
 
-import camunda.flownode.FoundFlowNodes;
+import camunda.entity.FoundFlowNodes;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

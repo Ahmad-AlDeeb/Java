@@ -1,4 +1,4 @@
-package camunda.flownode;
+package camunda.enums;
 
 public enum FlowNodeState {
     ACTIVE,

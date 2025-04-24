@@ -1,4 +1,4 @@
-package camunda.flownode;
+package camunda.entity;
 
 import java.util.List;
 

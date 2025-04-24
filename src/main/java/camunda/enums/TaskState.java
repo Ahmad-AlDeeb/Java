@@ -1,4 +1,4 @@
-package camunda.task;
+package camunda.enums;
 
 public enum TaskState {
     CREATED,

@@ -1,6 +1,6 @@
 package camunda.client;
 
-import camunda.job.ActivatedJobs;
+import camunda.entity.ActivatedJobs;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;

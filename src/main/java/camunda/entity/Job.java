@@ -1,4 +1,4 @@
-package camunda.job;
+package camunda.entity;
 
 import java.util.Map;
 

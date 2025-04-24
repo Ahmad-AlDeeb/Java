@@ -1,4 +1,7 @@
-package camunda.flownode;
+package camunda.entity;
+
+import camunda.enums.FlowNodeState;
+import camunda.enums.FlowNodeType;
 
 public record FlowNode(
         long key,

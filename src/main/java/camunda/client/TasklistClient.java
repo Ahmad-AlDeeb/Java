@@ -1,6 +1,6 @@
 package camunda.client;
 
-import camunda.task.Task;
+import camunda.entity.Task;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;

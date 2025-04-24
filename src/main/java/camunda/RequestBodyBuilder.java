@@ -1,6 +1,6 @@
 package camunda;
 
-import camunda.flownode.FlowNodeState;
+import camunda.enums.FlowNodeState;
 
 import java.util.Map;
 
