@@ -1,6 +1,5 @@
-package client;
+package ai;
 
-import entity.NvidiaResponse;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -13,7 +12,7 @@ import java.util.Map;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @Component
-public class NvidiaClient {
+public class NvidiaClient implements AiClient {
     @Value("${NVIDIA_API_URL}")
     private String nvidiaApiUrl;
 
@@ -24,6 +23,7 @@ public class NvidiaClient {
     private static final String MODEL = "qwen/qwen2.5-coder-32b-instruct";
 
     @PostConstruct
+    @Override
     public void buildRestClient() {
         restClient = RestClient.builder()
                 .baseUrl(nvidiaApiUrl)
@@ -33,7 +33,8 @@ public class NvidiaClient {
                 .build();
     }
 
-    public String getResponse(String prompt) {
+    @Override
+    public String sendPromptToAi(String prompt) {
         NvidiaResponse response = restClient.post()
                 .body(Map.of(
                         "model", MODEL,

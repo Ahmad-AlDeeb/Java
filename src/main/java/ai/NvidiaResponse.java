@@ -1,4 +1,4 @@
-package entity;
+package ai;
 
 import java.util.List;
 
